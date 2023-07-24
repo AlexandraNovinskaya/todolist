@@ -1,4 +1,5 @@
-import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import formatDistanceToNow from 'date-fns';
+  // /formatDistanceToNow';
 
 import { Component } from 'react';
 
