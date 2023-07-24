@@ -1,5 +1,4 @@
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
-
 import { Component } from 'react';
 import PropTypes from 'prop-types'
 
