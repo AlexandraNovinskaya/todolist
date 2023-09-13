@@ -14,12 +14,22 @@ export default class NewTaskForm extends Component {
     })
   };
 
+  // onSubmit = (e) => {
+  //   e.preventDefault()
+  //   this.props.addItem(this.state.label)
+  //   this.setState({
+  //     label: '',
+  //   })
+  // };
+
   onSubmit = (e) => {
     e.preventDefault()
-    this.props.addItem(this.state.label)
-    this.setState({
-      label: '',
-    })
+    if (this.state.label.trim() !== '') { // Проверяем, что label не пустой или состоит только из пробелов
+      this.props.addItem(this.state.label)
+      this.setState({
+        label: '',
+      })
+    }
   };
 
   render() {
